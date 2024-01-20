@@ -108,7 +108,7 @@ params:
       - 在它们烧尽之前。
 
   editPost:
-    URL: "../feedback"
+    URL: "../../about/feedback"
     Text: "反馈" # edit text
     appendFilePath: false # to append file path to Edit link
 
