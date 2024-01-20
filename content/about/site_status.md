@@ -7,7 +7,7 @@ categories = []
 tags = []
 series = []
 description = 'Site status'
-weight = 9998
+weight = 9990
 draft = false
 ShowToc = false  # 显示目录
 TocOpen = true # 自动展开目录
@@ -21,6 +21,7 @@ showbreadcrumbs = true #顶部显示当前路径
     relative = false
 +++
 
+
 ----
 ### 技术层面
 
@@ -28,6 +29,7 @@ showbreadcrumbs = true #顶部显示当前路径
 
 [pages_doc]: https://developers.cloudflare.com/pages/
 [r2_doc]: https://developers.cloudflare.com/r2/
+
 
 [^1]: 其实是没钱qwq。
 [^2]: 理想情况下会是这样。

@@ -24,14 +24,14 @@ showbreadcrumbs = true #顶部显示当前路径
 ----
 ### 投稿方式
 
-&emsp;&emsp;由于[技术所限][technical_limitations]，本站目前主要接受邮箱和Github两种投稿方式。
+&emsp;&emsp;由于 [技术所限][technical_limitations]，本站目前主要接受邮箱和Github两种投稿方式。
 本站的IRC频道也在建设中，敬请期待。
 
 #### 向邮箱投稿的步骤
 
 > escapevelocity167@gmail.com  
 
-&emsp;&emsp;请将投稿内容作为邮箱附件发送，邮箱标题请包含“投稿”字样。如希望注明作者，请在邮件主题或正文内署名。
+&emsp;&emsp;请将投稿内容作为邮件附件发送，邮箱标题请包含「投稿」字样。如希望注明作者，请在邮件主题或正文内署名。
 
 #### 向Github投稿的步骤
 
