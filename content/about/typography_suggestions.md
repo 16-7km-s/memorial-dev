@@ -8,7 +8,7 @@ tags = []
 series = []
 description = 'Typography suggestions'
 weight = 9980
-draft = true
+draft = false
 ShowToc = false  # 显示目录
 TocOpen = true # 自动展开目录
 hidemeta = true # 是否隐藏文章的元信息，如发布日期、作者等
@@ -91,15 +91,28 @@ showbreadcrumbs = false #顶部显示当前路径
 
 #### 数字和半角符号
 
-&emsp;&emsp;使用数字和西文字母时，请使用其半角字符。在引用整句或整段西文内容时，其内部标点建议使用半角字符。  
+&emsp;&emsp;使用数字和西文字母时，请使用其半角字符。在被西文内容中，其内部标点建议使用半角字符。  
+
+> Ａｅｓｔｈｅｔｉｃ  
+> 此处仅做实例，事实上该词通常由半角西文字母和空格表示。
 
 > 我读书少，找不出例句。只能打开教材，看上面写着「Valē, puella, iam Catullus obdūrat, nec tē requīret nec rogābit invītam; at tu dolēbis, cum rogāberis nūlla.」  
 
 ----
+### 其他
+
+#### 「注意事项」与页面相关声明
+
+&emsp;&emsp;
+
+----
 ### 引用
 
-1. [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
-1. Jostein Gaarder.*Sophie's World* /《苏菲的世界》作家出版社
-1. Fredric Wheelock, Richard LaFleur.*Wheelock's Latin 7E* /《韦洛克拉丁语教程》（第 7 版）
+1. [Sparanoid. 中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
+1. [W3C. Requirements for Chinese Text Layout
+中文排版需求：中、西文混排处理](https://www.w3.org/TR/clreq/#chinese_and_western_mixed_text_composition)
+1. Jostein Gaarder. *Sophie's World* /《苏菲的世界》作家出版社
+1. Fredric Wheelock, Richard LaFleur. *Wheelock's Latin 7E* /《韦洛克拉丁语教程》（第 7 版）
+
 
 [^1]: 此处指使用拉丁字母的语言。如无特殊说明，以下的「西文」一词均表示同样的含义。
