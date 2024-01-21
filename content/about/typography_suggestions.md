@@ -93,7 +93,7 @@ showbreadcrumbs = true #顶部显示当前路径
 
 #### 数字和半角符号
 
-&emsp;&emsp;使用数字和西文字母时，请使用其半角字符。在被西文内容中，其内部标点建议使用半角字符。  
+&emsp;&emsp;使用数字和西文字母时，请使用其半角字符。在西文内容中，其内部标点建议使用半角字符。  
 
 > Ａｅｓｔｈｅｔｉｃ  
 > 此处仅做实例，事实上该词通常由半角西文字母和空格表示。
@@ -108,12 +108,12 @@ showbreadcrumbs = true #顶部显示当前路径
 &emsp;&emsp;如本页面开头所示，需要对该文档内容做出相关声明时，请在首行使用以下结构。
 
     ----
-    > > :warning:&emsp;Dē gustibus nōn est disputandum.  
+    > > :yellow_square:&emsp;Dē gustibus nōn est disputandum.  
     > > 各有所好
     ----
 
 > ----
-> > > :warning:&emsp;Dē gustibus nōn est disputandum.  
+> > > :yellow_square:&emsp;Dē gustibus nōn est disputandum.  
 > > > 各有所好 
 > ----
 
