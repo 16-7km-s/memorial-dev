@@ -54,10 +54,11 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         
-        # -D 包含草稿
+        # -D 包含草稿，--cleanDestinationDir 清空输出文件
         run: |
           hugo \
             -D \
+            --cleanDestinationDir \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact

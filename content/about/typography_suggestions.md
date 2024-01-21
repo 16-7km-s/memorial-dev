@@ -13,7 +13,7 @@ ShowToc = false  # 显示目录
 TocOpen = true # 自动展开目录
 hidemeta = true # 是否隐藏文章的元信息，如发布日期、作者等
 disableShare = true # 底部不显示分享栏
-showbreadcrumbs = false #顶部显示当前路径
+showbreadcrumbs = true #顶部显示当前路径
 [cover]
     image = '' #图片路径：posts/tech/文章1/picture.png
     caption = '' #图片底部描述
@@ -22,8 +22,8 @@ showbreadcrumbs = false #顶部显示当前路径
 +++
 
 ----
-> 本文仅作为站务撰写本站文档的参考，对投稿至本站的作品不做任何强制要求。  
-> 所述的内容仅作为确保文档风格的统一的建议，不具备其他方面的指导价值。
+> > :blue_square:&emsp;本文仅作为站务撰写本站文档的参考，对投稿至本站的作品不做任何强制要求。  
+> > 所述的内容仅作为确保文档风格的统一的建议，不具备其他方面的指导价值。
 ----
 ### 标题
 &emsp;&emsp;在文章层次满足实际需求的情况下，页面内的节标题应当优先使用三到五级标题。当需求不能满足时，优先扩展至二级标题，其次使用六级标题。  
@@ -77,7 +77,9 @@ showbreadcrumbs = false #顶部显示当前路径
 
 #### 全角引号，括号与书名号
 
-&emsp;&emsp;在中文文段内请使用直角引号（「」），在引号内引用时使用直角双引号（『』），使用西文[^1]注释时使用全角圆括号。  
+&emsp;&emsp;在中文文段内请使用直角引号（「」），在直角引号内引用时使用直角双引号（『』），以此类推。如需继续嵌套，请在嵌套层次中使直角引号与直角双引号交替出现。使用西文[^1]注释时使用全角圆括号。  
+
+[^1]: 此处指使用拉丁字母的语言。如无特殊说明，以下的「西文」一词均表示同样的含义。
 
 > &emsp;&emsp;“近年来科学界有一种说法是：我们整个科学思想的模式正面临一个‘典范转移’（paradigm shift），意思就是说科学家思考的方式有了一个根本上的转变，而且这个现象已经在若干领域内开花结果；我们可以看到许多所谓‘新生活运动’（alternative move-ments）倡导整体主义（holism）和新的生活方式。”
 
@@ -103,7 +105,17 @@ showbreadcrumbs = false #顶部显示当前路径
 
 #### 「注意事项」与页面相关声明
 
-&emsp;&emsp;
+&emsp;&emsp;如本页面开头所示，需要对该文档内容做出相关声明时，请在首行使用以下结构。
+
+    ----
+    > > :warning:&emsp;Dē gustibus nōn est disputandum.  
+    > > 各有所好
+    ----
+
+> ----
+> > > :warning:&emsp;Dē gustibus nōn est disputandum.  
+> > > 各有所好 
+> ----
 
 ----
 ### 引用
@@ -113,6 +125,3 @@ showbreadcrumbs = false #顶部显示当前路径
 中文排版需求：中、西文混排处理](https://www.w3.org/TR/clreq/#chinese_and_western_mixed_text_composition)
 1. Jostein Gaarder. *Sophie's World* /《苏菲的世界》作家出版社
 1. Fredric Wheelock, Richard LaFleur. *Wheelock's Latin 7E* /《韦洛克拉丁语教程》（第 7 版）
-
-
-[^1]: 此处指使用拉丁字母的语言。如无特殊说明，以下的「西文」一词均表示同样的含义。

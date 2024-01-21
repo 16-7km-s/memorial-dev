@@ -30,6 +30,5 @@ showbreadcrumbs = true #顶部显示当前路径
 [pages_doc]: https://developers.cloudflare.com/pages/
 [r2_doc]: https://developers.cloudflare.com/r2/
 
-
 [^1]: 其实是没钱qwq。
 [^2]: 理想情况下会是这样。
