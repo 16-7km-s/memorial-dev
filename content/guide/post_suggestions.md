@@ -7,8 +7,10 @@ categories = []
 tags = []
 series = []
 description = 'How to post'
+
 weight = 200
 draft = false
+
 ShowToc = false  # 显示目录
 TocOpen = true # 自动展开目录
 hidemeta = true # 是否隐藏文章的元信息，如发布日期、作者等

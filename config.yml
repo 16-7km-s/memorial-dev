@@ -16,7 +16,7 @@ enableInlineShortcodes: true # 允许内联短码
 enableRobotsTXT: true # 允许爬虫抓取到搜索引擎，建议 true
 enableEmoji: true # 允许使用 Emoji 表情，建议 true
 pygmentsUseClasses: true
-mainsections: ["post", "papermod"] # 主页的主要分节
+mainsections: ["post"] # 主页的主要分节
 # googleAnalytics: UA-123-45 # 谷歌统计
 
 minify:
@@ -27,7 +27,7 @@ languages:
   zh:
     languageName: "中文"
     weight: 2
-    title: 纪念碑
+    title: 🎨纪念碑
     taxonomies:
       category: 分类
       tag: 标签
@@ -35,27 +35,30 @@ languages:
       author: 作者
     menu:
       main:
-        - name: 搜索
-          url: search
-          weight: 10
         - name: 标签
           url: tags
-          weight: 20
+          weight: 10
         - name: 分类
           url: categories
-          weight: 30
+          weight: 20
         - name: 系列
           url: series
-          weight: 40
+          weight: 30
         - name: 作者
           url: authors
+          weight: 40
+        - name: 指导
+          url: guide
           weight: 50
         - name: 关于
           url: about
           weight: 60
+        - name: 🔍搜索
+          url: search
+          weight: 70
         - name: " "
           url: "#"
-          weight: 55
+          weight: 65
 
 outputs:
   home:

@@ -7,8 +7,10 @@ categories = []
 tags = []
 series = []
 description = 'Typography suggestions'
-weight = 9980
+
+weight = 300
 draft = false
+
 ShowToc = false  # 显示目录
 TocOpen = true # 自动展开目录
 hidemeta = true # 是否隐藏文章的元信息，如发布日期、作者等
@@ -96,7 +98,7 @@ showbreadcrumbs = true #顶部显示当前路径
 &emsp;&emsp;使用数字和西文字母时，请使用其半角字符。在西文内容中，其内部标点建议使用半角字符。  
 
 > Ａｅｓｔｈｅｔｉｃ  
-> 此处仅做实例，事实上该词通常由半角西文字母和空格表示。
+> 此处仅作示例，事实上该词通常由半角西文字母和空格表示。
 
 > 我读书少，找不出例句。只能打开教材，看上面写着「Valē, puella, iam Catullus obdūrat, nec tē requīret nec rogābit invītam; at tu dolēbis, cum rogāberis nūlla.」  
 
