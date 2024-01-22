@@ -2,7 +2,7 @@
 title = '反馈'
 date = 2024-01-19T21:53:27+08:00
 lastmod = 2024-01-19T21:53:27+08:00
-author = ['16.7km/s', '-13.6ev']
+author = []
 categories = []
 tags = []
 series = []

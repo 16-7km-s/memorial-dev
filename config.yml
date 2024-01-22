@@ -28,12 +28,13 @@ languages:
     languageName: "中文"
     weight: 2
     title: 🎨纪念碑
-    taxonomies:
-      category: 分类
-      tag: 标签
-      series: 系列
-      author: 作者
-    menu:
+    taxonomies: # 分类法配置
+      tag: tags
+      category: categories
+      series: series
+      author: author
+    
+    menu: # 菜单
       main:
         - name: 标签
           url: tags
@@ -45,20 +46,63 @@ languages:
           url: series
           weight: 30
         - name: 作者
-          url: authors
+          url: author
           weight: 40
-        - name: 指导
-          url: guide
+        - name: 帮助
+          identifier: help_menu
+          url: help_menu
           weight: 50
-        - name: 关于
-          url: about
+        
+        - name: " "
+          url: "#"
           weight: 60
         - name: 🔍搜索
           url: search
           weight: 70
+        
+        - name: 指导
+          parent: help_menu
+          url: guide
+          weight: 10
+        - name: 关于
+          parent: help_menu
+          url: about
+          weight: 20
+      
+      footer:
+        - name: 标签
+          url: tags
+          weight: 10
+        - name: 分类
+          url: categories
+          weight: 20
+        - name: 系列
+          url: series
+          weight: 30
+        - name: 作者
+          url: author
+          weight: 40
+        - name: 帮助
+          identifier: help_menu
+          url: help_menu
+          weight: 50
+        
         - name: " "
           url: "#"
-          weight: 65
+          weight: 60
+        - name: 🔍搜索
+          url: search
+          weight: 70
+        
+        - name: 指导
+          parent: help_menu
+          url: guide
+          weight: 10
+        - name: 关于
+          parent: help_menu
+          url: about
+          weight: 20
+
 
 outputs:
   home:

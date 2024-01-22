@@ -2,9 +2,9 @@
 title = '如何投稿'
 date = 2024-01-20T13:39:46+08:00
 lastmod = 2024-01-20T13:39:46+08:00
-author = ['16.7km/s', '-13.6ev']
-categories = []
+author = []
 tags = []
+categories = []
 series = []
 description = 'How to post'
 
@@ -24,10 +24,19 @@ showbreadcrumbs = true #顶部显示当前路径
 +++
 
 ----
+> > :yellow_square:&emsp;在向本站投稿前，推荐您先行阅读 [收录准则][inclusion_principles]，以确保您的使用体验。  
+> > 
+> > 无论是否投稿，本站在此都祝您在创作和表达的路上找到想要的答案。  
+
+[inclusion_principles]: ../inclusion_principles
+
+----
 ### 投稿方式
 
 &emsp;&emsp;由于 [技术所限][technical_limitations]，本站目前主要接受邮箱和Github两种投稿方式。
 本站的IRC频道也在建设中，敬请期待。
+
+[technical_limitations]: ../site_status
 
 #### 向邮箱投稿的步骤
 
@@ -46,4 +55,4 @@ showbreadcrumbs = true #顶部显示当前路径
 &emsp;&emsp;
 
 
-[technical_limitations]: ../site_status
+
