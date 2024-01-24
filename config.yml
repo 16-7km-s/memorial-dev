@@ -80,7 +80,7 @@ params:
   description: "Memorial of nothing"
   author: ["匿名作者"] # 默认作者
   # author: ["Me", "You"] # multiple authors
-  DateFormat: "2006.1.2 PM" # 这里必须写成2006年1月2日3时4分5秒 周一 下午 
+  DateFormat: "06.1.2 PM" # 这里必须写成2006年1月2日3时4分5秒 周一 下午 
 
   defaultTheme: dark
   # disableThemeToggle: true

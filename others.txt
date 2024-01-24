@@ -1,0 +1,4 @@
+<!-- 分隔符 -->
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}
