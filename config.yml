@@ -33,8 +33,7 @@ languages:
       category: categories
       series: series
       author: author
-    
-    menu: # 菜单
+    menus: # 菜单
       main:
         - name: 标签
           url: tags
@@ -48,7 +47,7 @@ languages:
         - name: 作者
           url: author
           weight: 40
-        - name: 帮助
+        - name: 帮助 +
           identifier: help_menu
           url: help_menu
           weight: 50
@@ -68,41 +67,6 @@ languages:
           parent: help_menu
           url: about
           weight: 20
-      
-      footer:
-        - name: 标签
-          url: tags
-          weight: 10
-        - name: 分类
-          url: categories
-          weight: 20
-        - name: 系列
-          url: series
-          weight: 30
-        - name: 作者
-          url: author
-          weight: 40
-        - name: 帮助
-          identifier: help_menu
-          url: help_menu
-          weight: 50
-        
-        - name: " "
-          url: "#"
-          weight: 60
-        - name: 🔍搜索
-          url: search
-          weight: 70
-        
-        - name: 指导
-          parent: help_menu
-          url: guide
-          weight: 10
-        - name: 关于
-          parent: help_menu
-          url: about
-          weight: 20
-
 
 outputs:
   home:
@@ -112,9 +76,9 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  footer_author: "TCI Obsv III" # 自定义参数，用于在脚注显示作者
+  footer_author: "TCI Obsv III & ddlcp" # 自定义参数，用于在脚注显示作者
   description: "Memorial of nothing"
-  author: 未知作者 # 默认作者
+  author: ["匿名作者"] # 默认作者
   # author: ["Me", "You"] # multiple authors
   DateFormat: "2006.1.2 PM" # 这里必须写成2006年1月2日3时4分5秒 周一 下午 
 

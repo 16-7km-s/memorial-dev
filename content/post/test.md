@@ -23,7 +23,7 @@ showbreadcrumbs = true #顶部显示当前路径
 
 ----
 > > :blue_square::green_square::yellow_square::red_square:  
-> > 信息/许可/警告/禁止
+> > 信息/许可/建议/禁止
 ----
 ### *DE FINIBVS BONORVM ET MALORVM*[^1]
 
