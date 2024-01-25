@@ -86,6 +86,7 @@ params:
   # disableThemeToggle: true
   hideSummary: false # 隐藏概要
   ShowShareButtons: true # 显示分享按钮
+  ShowWordCount: true # 显示字数
   ShowReadingTime: false # 显示阅读时间
   ShowLastMod: true # 显示上次修改
   # disableSpecial1stPost: true
