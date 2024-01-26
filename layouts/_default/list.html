@@ -7,7 +7,7 @@
 {{- if not .IsHome | and .Title }}
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
-  <h1>
+  <h1 class="post-title">
     {{ .Title }}
     {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
     {{- with .OutputFormats.Get "rss" }}
@@ -64,8 +64,7 @@
 {{- end }}
 
 <article class="{{ $class }}">
-  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  <div class="custom-post-entry"> <!-- 手动添加的，用来把封面移到侧边 -->
   <header class="entry-header">
     <h2 class="entry-hint-parent">
       {{- .Title }}
@@ -89,6 +88,11 @@
     {{- partial "post_meta_list.html" . -}}
   </footer>
   {{- end }}
+  </div> <!-- 手动分块结束 -->
+  <!-- 封面图片 -->
+  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+  {{- partial "cover_list.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
 {{- end }}

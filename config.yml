@@ -51,13 +51,10 @@ languages:
           identifier: help_menu
           url: help_menu
           weight: 50
-        
-        - name: " "
-          url: "#"
-          weight: 60
+
         - name: 🔍搜索
           url: search
-          weight: 70
+          weight: 60
         
         - name: 指导
           parent: help_menu
@@ -83,6 +80,7 @@ params:
   DateFormat: "06.1.2 PM" # 这里必须写成2006年1月2日3时4分5秒 周一 下午 
 
   defaultTheme: dark
+  disableAnchoredHeadings: false
   # disableThemeToggle: true
   hideSummary: false # 隐藏概要
   ShowShareButtons: true # 显示分享按钮

@@ -1,5 +1,5 @@
 +++
-title = 'FAQ'
+title = 'FAQs'
 date = 2024-01-22T10:13:26+08:00
 lastmod = 2024-01-22T10:13:26+08:00
 author = []
