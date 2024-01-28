@@ -1,13 +1,13 @@
 +++
 # 标题
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+title = '作者中心页'
 # 副标题
-description = '{{ replace .File.ContentBaseName "-" " " | title }}'
+description = 'Author hub'
 # 摘要
 summary = ''
 
-date = {{ .Date }} # 创建日期
-lastmod = {{ .Date }} # 最后修改日期
+date = 2024-01-28T14:38:42+08:00 # 创建日期
+lastmod = 2024-01-28T14:38:42+08:00 # 最后修改日期
 
 tags = [] # 标签
 categories = [] # 类别

@@ -6,6 +6,7 @@
 }
 
 .post-title {
+    /* 我还不太懂为什么，但这两个居中属性都得要 */
     text-align: center;
     justify-content: center;
     margin-bottom: 2px;

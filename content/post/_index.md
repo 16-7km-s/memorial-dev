@@ -1,13 +1,13 @@
 +++
 # 标题
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+title = '稿件中心页'
 # 副标题
-description = '{{ replace .File.ContentBaseName "-" " " | title }}'
+description = 'Post hub'
 # 摘要
 summary = ''
 
-date = {{ .Date }} # 创建日期
-lastmod = {{ .Date }} # 最后修改日期
+date = 2024-01-28T17:23:45+08:00 # 创建日期
+lastmod = 2024-01-28T17:23:45+08:00 # 最后修改日期
 
 tags = [] # 标签
 categories = [] # 类别
@@ -15,15 +15,15 @@ series = [] # 系列
 authors = [] # 作者
 
 weight = 100 # 排序权重，不建议修改
-draft = false # 是否为草稿，true可能会导致页面无法发布
+draft = true # 是否为草稿，true可能会导致页面无法发布
 searchHidden =  false # 在搜索中隐藏
 
 showbreadcrumbs = true # 在标题上方显示导航路径
 hideAuthor = false # 隐藏作者
-hidemeta = true # 隐藏发布信息（作者，日期和字数）
-ShowToc = false  # 显示目录
+hidemeta = false # 隐藏发布信息（作者，日期和字数）
+ShowToc = true  # 显示目录
 TocOpen = false # 自动展开目录
-disableShare = true # 不显示分享栏
+disableShare = false # 不显示分享栏
 
 [cover] # 文章封面图
     image = '' # 图片路径

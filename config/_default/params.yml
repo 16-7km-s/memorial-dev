@@ -1,0 +1,51 @@
+env: production # to enable google analytics, opengraph, twitter-cards and schema.
+footer_author: "TCI Obsv III & ddlcp" # 自定义参数，用于在脚注显示作者
+description: "Memorial of nothing"
+authors: ["匿名作者"] # 站点的默认作者
+DateFormat: "06.1.2 PM" # 这里必须写成2006年1月2日3时4分5秒 周一 下午 
+
+defaultTheme: dark
+disableAnchoredHeadings: false
+# disableThemeToggle: true
+hideSummary: false # 隐藏概要
+ShowShareButtons: true # 显示分享按钮
+ShowWordCount: true # 显示字数
+ShowReadingTime: false # 显示阅读时间
+ShowLastMod: true # 显示上次修改
+# disableSpecial1stPost: true
+displayFullLangName: true
+ShowPostNavLinks: false # 显示上一个/下一个按钮
+ShowCodeCopyButtons: true # 显示代码复制按钮
+ShowFullTextinRSS: true # 在rss中显示全部文本
+ShowRssButtonInSectionTermList: true # 在文件夹页面显示 Rss 按钮
+ShowAllPagesInArchive: false # 在时间线中显示所有页面
+ShowPageNums: true # 显示页码
+# comments: false
+images: ["images/papermod-cover.png"]
+
+profileMode:
+  enabled: false
+
+editPost:
+  URL: "../../about/feedback"
+  Text: "反馈" # edit text
+  appendFilePath: false # to append file path to Edit link
+
+label:
+  iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+  # text: "Home"
+  # icon: icon.png
+  iconHeight: 35
+
+assets:
+  disableHLJS: true
+#     favicon: "<link / abs url>"
+#     favicon16x16: "<link / abs url>"
+#     favicon32x32: "<link / abs url>"
+#     apple_touch_icon: "<link / abs url>"
+#     safari_pinned_tab: "<link / abs url>"
+
+# cover:
+#       hidden: false # hide everywhere but not in structured data
+#       hiddenInList: false # hide on list pages and home
+#       hiddenInSingle: true # hide on single page

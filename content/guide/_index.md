@@ -2,7 +2,7 @@
 title = '指导中心页'
 date = 2024-01-22T10:34:57+08:00
 lastmod = 2024-01-22T10:34:57+08:00
-author = []
+authors = []
 categories = []
 tags = []
 series = []

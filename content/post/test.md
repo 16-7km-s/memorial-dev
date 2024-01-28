@@ -2,7 +2,7 @@
 title = 'Test'
 date = 2024-01-19T17:12:45+08:00
 lastmod = 2024-01-25T00:04:46+08:00
-author = ['焦糖玻璃', 'Ellen An']
+authors = ['焦糖玻璃', 'Ellen An']
 tags = ['test']
 categories = ['test']
 series = ['test']
@@ -15,7 +15,7 @@ hidemeta = false # 是否隐藏文章的元信息，如发布日期、作者等
 disableShare = false # 底部不显示分享栏
 showbreadcrumbs = true #顶部显示当前路径
 [cover]
-    image = '' #图片路径：posts/tech/文章1/picture.png
+    image = 'https://img.tcio3.top/2x2-23.11.7-300.png'
     caption = '' #图片底部描述
     alt = ''
     relative = false

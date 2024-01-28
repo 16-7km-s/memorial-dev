@@ -1,12 +1,12 @@
 +++
-title = '关于本站'
+title = '关于中心页'
 date = 2024-01-19T11:43:05+08:00
 lastmod = 2024-01-19T11:43:05+08:00
-author = []
+authors = []
 categories = []
 tags = []
 series = []
-description = 'About this site'
+description = 'Information Hub'
 weight = 100
 draft = false
 ShowToc = false  # 显示目录
@@ -23,7 +23,7 @@ showbreadcrumbs = false #顶部显示当前路径
 
 ----
 
-&emsp;&emsp;如主页所述，这里是信息时代的一座纪念碑，用来纪念那些*本不重要* 的事物。
+&emsp;&emsp;这里是信息时代的一座纪念碑，用来纪念那些*本不重要* 的事物。
 本意上，本站的目的是*提供一个**非盈利**性质的、**审核宽松**、**支持匿名投稿**，同时**去评论化**的平台，**仅**供人们展示**自己的**作品*。  
 
 &emsp;&emsp;本站目前开放 [投稿][post_suggestions]，欢迎任何感兴趣的作者。但如果您符合以下条件，那本站简直就是为您量身定做的（？）：

@@ -19,8 +19,8 @@ draft = false # 是否为草稿，true可能会导致页面无法发布
 searchHidden =  false # 在搜索中隐藏
 
 showbreadcrumbs = true # 在标题上方显示导航路径
-hideAuthor = false # 隐藏作者
-hidemeta = true # 隐藏发布信息（作者，日期和字数）
+hideAuthor = true # 隐藏作者
+hidemeta = false # 隐藏发布信息（作者，日期和字数）
 ShowToc = false  # 显示目录
 TocOpen = false # 自动展开目录
 disableShare = true # 不显示分享栏

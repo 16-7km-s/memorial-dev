@@ -1,0 +1,49 @@
+main:
+  - name: 🔍搜索
+    url: search
+    weight: 999
+  
+  - name: 查看 +
+    identifier: view
+    weight: 100
+  - name: 信息 +
+    identifier: information
+    weight: 200
+  - name: 评论区
+    identifier: comments
+    url: comments
+    weight: 300
+  
+  - name: 标签
+    parent: view
+    url: tags
+    weight: 100
+  - name: 类别
+    parent: view
+    url: categories
+    weight: 200
+  - name: 系列
+    parent: view
+    url: series
+    weight: 300
+  - name: 作者
+    parent: view
+    url: authors
+    weight: 400
+  
+  - name: 作者中心页
+    parent: information
+    url: author
+    weight: 100
+  - name: 稿件中心页
+    parent: information
+    url: post
+    weight: 100
+  - name: 指导中心页
+    parent: information
+    url: guide
+    weight: 200
+  - name: 关于中心页
+    parent: information
+    url: about
+    weight: 300

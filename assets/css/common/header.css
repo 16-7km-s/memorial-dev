@@ -1,0 +1,137 @@
+
+.nav-container {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+}
+
+.nav {
+    line-height: var(--header-height);
+    width: 100%;
+    max-width: calc(var(--nav-width) + var(--gap) * 2);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+
+    /*opacity: 85%; 引以为戒，这俩属性不能加，加了就用不了*/
+    /*background-color: var(--theme);*/
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.2);
+    backdrop-filter: brightness(120%) saturate(120%) blur(15px);
+    -webkit-backdrop-filter: brightness(120%) saturate(120%) blur(15px);
+}
+
+.nav a {
+    display: block;
+}
+
+.logo,
+#menu {
+    display: flex;
+    margin: auto var(--gap);
+}
+
+.logo {
+    flex-wrap: inherit;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo a img, .logo a svg {
+    display: inline;
+    vertical-align: middle;
+    pointer-events: none;
+    transform: translate(0, -10%);
+    border-radius: 6px;
+    margin-inline-end: 8px;
+}
+
+.logo a:hover {
+    transition: 0.15s;
+    color: gray;
+}
+
+
+button#theme-toggle {
+    font-size: 26px;
+    margin: auto 4px;
+}
+
+#moon:hover {
+    transition: 0.15s;
+    color: deepskyblue;
+}
+
+#sun:hover {
+    transition: 0.15s;
+    color: gold;
+}
+
+
+body.dark #moon {
+    vertical-align: middle;
+    display: none;
+}
+
+body:not(.dark) #sun {
+    display: none;
+}
+
+#menu {
+    justify-content: right;
+    align-self: flex-end;
+    list-style: none;
+    word-break: keep-all;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#menu li + li {
+    margin-inline-start: var(--gap);
+}
+
+#menu a {
+    font-size: 16px;
+}
+
+#menu a:hover {
+    transition: 0.15s;
+    color: grey;
+}
+
+#menu .active {
+    font-weight: 500;
+    border-bottom: 2px solid currentColor;
+}
+
+.lang-switch li,
+.lang-switch ul,
+.logo-switches {
+    display: inline-flex;
+    margin: auto 4px;
+}
+
+.lang-switch {
+    display: flex;
+    flex-wrap: inherit;
+}
+
+.lang-switch a {
+    margin: auto 3px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.logo-switches {
+    flex-wrap: inherit;
+}

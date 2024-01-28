@@ -1,27 +1,18 @@
 <!-- 这是专门用来在列表和时间线界面显示用的 -->
 
-{{- $scratch := newScratch }}
-
 <!-- 创建时间 -->
 {{- if not .Date.IsZero -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format "06.1.2"))) }}
+{{- printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format "06.1.2") | safeHTML }}
 {{- end }}
 
 <!-- 更新时间 -->
 {{- if gt .Lastmod .Date -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>&nbsp;/&nbsp;%s&nbsp;更新</span>" (.Lastmod) (.Lastmod | time.Format "06.1.2"))) }}
+{{- printf "<span title='%s'>&nbsp;/&nbsp;%s&nbsp;更新</span>" (.Lastmod) (.Lastmod | time.Format "06.1.2") | safeHTML }}
 {{- end }}
-
-<!-- 手动分隔符 -->
-{{- $scratch.Add "meta" (slice (printf "&emsp;·&emsp;")) }}
 
 <!-- 作者 -->
 <!-- 我不会修，直接把partial调用删了，现在作者必须是列表 -->
 {{- if not (.Param "hideAuthor") -}}
-{{- $scratch.Add "meta" (slice ((delimit (.Params.author | default site.Params.author) "，" ))) }}
-{{- end -}}
-
-<!-- 啥也不是，转字符串用的 -->
-{{- with ($scratch.Get "meta") }}
-{{- delimit . "" | safeHTML -}}
+&nbsp;|&nbsp;
+{{- delimit (.Params.authors | default site.Params.authors) "，" }}
 {{- end -}}

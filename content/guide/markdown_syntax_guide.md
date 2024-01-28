@@ -2,13 +2,13 @@
 title = 'Markdown 格式指导'
 date = 2024-01-21T14:37:50+08:00
 lastmod = 2024-01-21T14:37:50+08:00
-author = []
+authors = []
 categories = []
 tags = []
 series = []
 description = 'Markdown syntax guide'
 
-weight = 400
+weight = 300
 draft = false
 
 ShowToc = false  # 显示目录
@@ -24,7 +24,7 @@ showbreadcrumbs = true #顶部显示当前路径
 +++
 
 ----
-> > :blue_square:&emsp;本文为不熟悉 Markdown 语法的用户提供了简单的速查表，已熟悉 Markdown 语法的用户可以跳过此节。
+> > :blue_square:&emsp;本文为不熟悉 Markdown 语法的用户提供了简单的速查表，已熟悉 Markdown 语法的用户可略过此页面。
 
 ----
 ### 标题
