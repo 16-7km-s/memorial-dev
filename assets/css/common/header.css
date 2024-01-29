@@ -9,8 +9,10 @@
 }
 
 .nav {
+    position: relative;
+    text-align: center;
     line-height: var(--header-height);
-    width: 100%;
+    width: 95%; /* 我不知道该怎么避让滚动条，只能这样躲开了 */
     max-width: calc(var(--nav-width) + var(--gap) * 2);
 
     display: flex;
@@ -21,9 +23,10 @@
 
     /*opacity: 85%; 引以为戒，这俩属性不能加，加了就用不了*/
     /*background-color: var(--theme);*/
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    /*border-bottom: 1px solid white; 玻璃外框，效果不太好*/
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.2);
     backdrop-filter: brightness(120%) saturate(120%) blur(15px);
     -webkit-backdrop-filter: brightness(120%) saturate(120%) blur(15px);
 }
