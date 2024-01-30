@@ -55,11 +55,15 @@
 }
 
 .post-entry:hover {
+    transition: 0.15s;
     transform: scale(1.02);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 20%);
 }
 
 .post-entry:active {
-    transform: scale(0.98);
+    transition: 0.5s; /* 动画放完弹回来不好看，故意延长的 */
+    transform: scale(0.95);
+    box-shadow: none;
 }
 
 .tag-entry .entry-cover {

@@ -15,7 +15,7 @@ series = [] # 系列
 authors = [] # 作者
 
 weight = 100 # 排序权重，不建议修改
-draft = true # 是否为草稿，true可能会导致页面无法发布
+draft = false # 是否为草稿，为「true」时页面不会发布
 searchHidden =  true # 在搜索中隐藏
 
 showbreadcrumbs = false # 在标题上方显示导航路径

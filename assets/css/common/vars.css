@@ -4,21 +4,28 @@
     --content-gap: 20px;
     --nav-width: 1380px;
     --main-width: 720px;
-    --header-height: 40px;
+    --header-height: 30px;
     --footer-height: 60px;
-    --radius: 8px;
-    --theme: rgb(255, 255, 255);
+    --radius: 12px;
+
+    --theme: rgb(245, 245, 245);
     --entry: rgb(255, 255, 255);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(214, 214, 214);
     --content: rgb(31, 31, 31);
-    --code-block-bg: rgb(28, 29, 33);
+    --code-block-bg: rgb(64, 66, 73);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
 
     --article-width: 650px;
     --toc-width: 300px;
+
+    /* 导航栏 */
+    /*--nav-bg: rgba(185, 197, 220, 45%); 玻璃色*/
+    --nav-bg: rgba(245, 245, 245, 55%);
+    --nav-border: rgba(255, 255, 255, 0.1);
+    --nav-menu-hover-bg: rgba(75, 75, 75, 0.1);
 }
 
 .dark {
@@ -31,6 +38,11 @@
     --code-block-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
+
+    /* 导航栏 */
+    /*--nav-bg: rgba(53, 62, 80, 45%); 玻璃色*/
+    --nav-bg: rgba(29, 30, 32, 55%);
+    --nav-menu-hover-bg: rgba(224, 224, 224, 0.1);
 }
 
 .list {

@@ -1,12 +1,12 @@
 main:
-  - name: 🔍搜索
+  - name: 搜索
     url: search
-    weight: 999
+    weight: 1
   
-  - name: 查看 +
+  - name: 查看
     identifier: view
     weight: 100
-  - name: 信息 +
+  - name: 信息
     identifier: information
     weight: 200
   - name: 评论区

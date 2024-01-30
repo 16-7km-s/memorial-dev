@@ -6,7 +6,10 @@
 }
 
 .post-title {
-    /* 我还不太懂为什么，但这两个居中属性都得要 */
+    /*
+        我还不太懂为什么，但这两个居中属性都得要
+        否则 list 或者 single 页面就会有一个标题不能居中    
+    */
     text-align: center;
     justify-content: center;
     margin-bottom: 2px;

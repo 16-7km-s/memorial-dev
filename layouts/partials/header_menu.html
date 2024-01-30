@@ -1,29 +1,41 @@
 {{- $currentPage := . }}
 
+<!-- 遍历菜单项 -->
 {{- range site.Menus.main }}
 {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
 {{- $page_url:= $currentPage.Permalink | absLangURL }}
+{{- $base_url := site.BaseURL }}
 {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
 <li>
     <!-- 这部分应该是枚举菜单项 -->
-    <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+    <a href="{{ .URL | absLangURL }}"
+    title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
     {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
         <!-- 菜单条目 -->
-        <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-            {{- .Pre }}
-            {{- .Name -}}
-            {{ .Post -}}
+        <span {{- if and (eq $menu_item_url $page_url) (ne $page_url $base_url) }} class="menu-active" {{- end }}>
+        {{- .Pre }}
+        {{- .Name -}}
+        {{ .Post -}}
         </span>
-        
-        <!-- 用来画外部链接的特殊标志 -->
-        {{- if (findRE "://" .URL) }}&nbsp;
-        <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-            stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-            <path d="M15 3h6v6"></path>
-            <path d="M10 14L21 3"></path>
-        </svg>
-        {{- end }}
     </a>
+    <!-- 如果有子项 -->
+    {{- if .HasChildren }}
+    <ul class="submenu">
+        {{- range .Children}}
+        <li>
+            <a href="{{ .URL | absLangURL }}"
+            title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+            {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                <!-- 菜单条目 -->
+                <span>
+                {{- .Pre }}
+                {{- .Name -}}
+                {{ .Post -}}
+                </span>
+            </a>
+        </li>
+        {{- end }}
+    </ul>
+    {{- end }}
 </li>
 {{- end }}

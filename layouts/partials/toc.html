@@ -102,7 +102,7 @@
          // Make the first header active
          activeElement = elements[0];
          const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('toc-active');
      }, false);
 
     window.addEventListener('resize', function(event) {
@@ -121,9 +121,9 @@
         elements.forEach(element => {
              const id = encodeURI(element.getAttribute('id')).toLowerCase();
              if (element === activeElement){
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('toc-active');
              } else {
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('toc-active');
              }
          })
      }, false);
