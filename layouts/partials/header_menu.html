@@ -1,3 +1,18 @@
+
+<script>
+    var list = document.querySelector("ul");
+    list.addEventListener(
+    "click",
+    function (ev) {
+        if (ev.target.tagName === "a") {
+        ev.target.classList.toggle("menu-expand");
+        }
+    },
+    false,
+    );
+
+</script>
+
 {{- $currentPage := . }}
 
 <!-- 遍历菜单项 -->
@@ -8,11 +23,12 @@
 {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
 <li>
     <!-- 这部分应该是枚举菜单项 -->
-    <a href="{{ .URL | absLangURL }}"
+    <a {{- if and (eq $menu_item_url $page_url) (ne $page_url $base_url) }} class="menu-active" {{- end }}
+    href="{{ .URL | absLangURL }}"
     title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
     {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
         <!-- 菜单条目 -->
-        <span {{- if and (eq $menu_item_url $page_url) (ne $page_url $base_url) }} class="menu-active" {{- end }}>
+        <span>
         {{- .Pre }}
         {{- .Name -}}
         {{ .Post -}}
@@ -20,22 +36,29 @@
     </a>
     <!-- 如果有子项 -->
     {{- if .HasChildren }}
-    <ul class="submenu">
-        {{- range .Children}}
-        <li>
-            <a href="{{ .URL | absLangURL }}"
-            title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-            {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                <!-- 菜单条目 -->
-                <span>
-                {{- .Pre }}
-                {{- .Name -}}
-                {{ .Post -}}
-                </span>
-            </a>
-        </li>
-        {{- end }}
-    </ul>
+    <div class="submenu-container">
+        <ul class="submenu">
+            {{- range .Children}}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- $base_url := site.BaseURL }}
+            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+            <li>
+                <a  {{- if and (eq $menu_item_url $page_url) (ne $page_url $base_url) }} class="menu-active" {{- end }}
+                href="{{ .URL | absLangURL }}"
+                title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                    <!-- 菜单条目 -->
+                    <span>
+                    {{- .Pre }}
+                    {{- .Name -}}
+                    {{ .Post -}}
+                    </span>
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+    </div>
     {{- end }}
 </li>
 {{- end }}

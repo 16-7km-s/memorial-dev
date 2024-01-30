@@ -31,19 +31,19 @@ main:
     url: authors
     weight: 400
   
-  - name: 作者中心页
-    parent: information
-    url: author
-    weight: 100
   - name: 稿件中心页
     parent: information
     url: post
     weight: 100
+  - name: 作者中心页
+    parent: information
+    url: author
+    weight: 200
   - name: 指导中心页
     parent: information
     url: guide
-    weight: 200
+    weight: 300
   - name: 关于中心页
     parent: information
     url: about
-    weight: 300
+    weight: 400

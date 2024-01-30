@@ -2,7 +2,6 @@
 .header {
     z-index: 10;
     position: fixed;
-    top: 0;
     width: 100%;
 
     display: flex;
@@ -17,7 +16,6 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-inline-start: auto;
     margin-inline-end: auto;
 
@@ -26,20 +24,17 @@
     border-left: 1px solid var(--nav-border); /* 玻璃外框*/
     border-right: 1px solid var(--nav-border); /* 玻璃外框*/
     border-bottom: 1px solid var(--nav-border); /* 玻璃外框*/
-    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
-    /* 毛玻璃 */
-    backdrop-filter: brightness(120%) saturate(120%) blur(10px);
-    -webkit-backdrop-filter: brightness(120%) saturate(120%) blur(10px);
-    background-color: var(--nav-bg); /* 注意顺序 */
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 10%);
 }
-
+  
 .nav a {
     display: block;
+    cursor: default;
 }
 
 .logo {
     display: flex;
-    margin: auto var(--gap);
+    margin: auto calc(var(--gap) / 2);
 }
 
 .logo {
@@ -50,10 +45,11 @@
 .logo a {
     font-size: 15px;
     font-weight: 500;
+    padding: 0px 8px 0px 8px;
 }
 
-
-.logo a img, .logo a svg {
+.logo a img,
+.logo a svg {
     display: inline;
     vertical-align: middle;
     pointer-events: none;
@@ -64,14 +60,18 @@
 
 .logo a:hover {
     transition: 0.15s;
-    border-radius: 8px;
-    background-color: var(--nav-content-bg);
+    border-radius: calc(var(--radius) / 2); /* 圆角 */
+    background-color: var(--nav-menu-hover-bg);
 }
 
 /*.logo a:active {
     transition: 0.15s;
     transform: scale(0.95);
 }*/
+
+.nav #place-holder { /* 占位符 */
+    flex: 1 1 auto;
+}
 
 button#theme-toggle {
     font-size: 26px;
@@ -81,11 +81,15 @@ button#theme-toggle {
 #moon:hover {
     transition: 0.15s;
     color: deepskyblue;
+    border-radius: calc(var(--radius) / 2); /* 圆角 */
+    background-color: var(--nav-menu-hover-bg);
 }
 
 #sun:hover {
     transition: 0.15s;
     color: gold;
+    border-radius: calc(var(--radius) / 2); /* 圆角 */
+    background-color: var(--nav-menu-hover-bg);
 }
 
 
